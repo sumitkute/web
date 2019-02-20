@@ -1,4 +1,4 @@
-ARG REGISTRY_NAME=demo42.azurecr.io/
+ARG REGISTRY_NAME=protechdays.azurecr.io/
 FROM ${REGISTRY_NAME}baseimages/microsoft/dotnet/sdk:linux-2.1 AS build
 WORKDIR /src
 COPY ./test/demo42tests/demo42tests.csproj ./test/demo42tests/

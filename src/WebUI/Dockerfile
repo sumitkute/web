@@ -1,5 +1,5 @@
 ARG REGISTRY_NAME=protechdays.azurecr.io/
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM microsoft/dotnet:2.1.504-sdk AS build
 WORKDIR /src
 COPY ./test/demo42tests/demo42tests.csproj ./test/demo42tests/
 COPY ./src/WebUI/WebUI.csproj src/WebUI/
